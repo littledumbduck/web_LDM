@@ -6,12 +6,12 @@ body {
     padding: 0;
     background-color: #1d1d1d;
     width: 90%;
+    color: white;
 }
 
 header {
     background-image: url('../images/header.jpg');
     color: #ffffff;
-    padding: 10px 0;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,14 @@ header {
 }
 
 nav {   
+    width: 90%;
+    margin: auto;
+}
+
+main {
+    background-color: #2d2d2d;
+    padding: 20px;
+    margin-top: 20px;
     width: 90%;
     margin: auto;
 }
@@ -47,3 +55,22 @@ ul li a {
 ul li a:hover {
     background-color: #111111;
 }
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: right;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+main {
+ display: grid;
+ grid-template-columns: 3fr 1fr;
+ gap: 20px; 
+ padding-top: 80px;
+}
+
+
