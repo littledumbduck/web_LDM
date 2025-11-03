@@ -36,10 +36,6 @@ ul {
     font-size: 18px;
 }
 
-ul li {
-    float: left;
-}
-
 ul li a {
     display: block;
     color: white;
