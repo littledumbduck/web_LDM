@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
 body {
   font-family: Arial, sans-serif;
@@ -11,6 +9,7 @@ body {
   color: white;
   background-image: url(../images/wallpaper.jpeg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -59,6 +58,7 @@ ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: 200ms;
 }
 
 ul li a:hover {
@@ -118,6 +118,7 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 1s;
 }
 
 input[type="submit"]:hover {
