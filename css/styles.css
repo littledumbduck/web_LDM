@@ -82,3 +82,78 @@ main {
   gap: 20px;
   padding-top: 80px;
 }
+
+article {
+  background-color: #3d3d3d;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+aside {
+  background-color: #3d3d3d;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+form {
+  color: white;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #ff1c1c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #680000;
+}
+
+.comentario {
+  background-color: #4d4d4d;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid #666666;
+}
+
+.avatar {
+    width: 76px;
+    height: 70px;
+    /* border-radius: 50%; */
+    display: inline-block;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    /* border-left: 1px solid #ffffff; */
+}
+
+.comentario strong {
+    color: #ff1c1c;
+    inline-size: auto;
+    position: absolute;
+    padding: 5px;
+}
+
+.trapper {background-image: url(../images/killers/trapper.jpg);}
+.wraith {background-image: url(../images/killers/wraith.jpg);}
+.hillbilly {background-image: url(../images/killers/hillbilly.jpg);}
+.dwight {background-image: url(../images/survivors/dwight.jpg);}
+.meg {background-image: url(../images/survivors/meg.jpg);}
+.feng {background-image: url(../images/survivors/feng.jpg);}
