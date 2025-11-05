@@ -40,6 +40,10 @@ main {
   margin-top: 20px;
   width: 90%;
   margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding-top: 80px;
 }
 
 ul {
@@ -73,13 +77,6 @@ footer {
   width: 90%;
   margin: auto;
   margin-top: 20px;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
-  padding-top: 80px;
 }
 
 article {
