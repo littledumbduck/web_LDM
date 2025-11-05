@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-/*
+<!-- >
   NOTAS DE DESARROLLO:
   - Falta añadir un <sub> y <sup>
   - Lista anidada
   - Elementos interactivos <details> y <summary>
   - Arreglar iframe
   - Incluir tabla compleja (border-collapse y vertical-align)
-  - Formulario más complejo con distintos tipos de inputs
   - Fuente de web no estandar
-  - Más box-Shadow 
-  - Elemento con opacity
   - Más pseudoelementos ::before y ::after
-*/
+-->
 <html>
   <head>
     <title>Inicio - Dead by Daylight</title>
@@ -34,7 +31,7 @@
       <!-- Principio de artículo -->
 
       <article>
-        <h2>¿Qué es Dead by Daylight?</h2>
+        <h1>¿Qué es Dead by Daylight?</h1>
         <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JGhIXLO3ul8?si=VS5LjLwkfM8apRa9&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <br><br>
             Dead by Daylight es un videojuego de terror y supervivencia multijugador asimétrico en línea desarrollado y publicado por el estudio canadiense Behaviour Interactive. Es un juego de uno contra cuatro en el que un jugador asume el papel de un asesino y los otros cuatro juegan como supervivientes; el asesino debe cazar y empalar a cada superviviente en ganchos de sacrificio para apaciguar a una fuerza malévola conocida como la Entidad, mientras que los supervivientes tienen que evitar ser atrapados y encender las puertas de salida trabajando juntos para arreglar cinco generadores.
@@ -42,7 +39,44 @@
             El juego fue lanzado para Windows en 2016; PlayStation 4 y Xbox One en 2017; Nintendo Switch en 2019; Android, iOS, PlayStation 5, Google Stadia y Xbox Series X/S en 2020; y Steam Deck en 2023. El estudio sueco Starbreeze Studios publicó el juego en nombre de Behaviour desde 2016 hasta 2018, cuando Behaviour compró los derechos de publicación. La empresa italiana 505 Games publica la versión de Nintendo Switch, mientras que la empresa austriaca Deep Silver publica copias físicas para las versiones de PlayStation 5 y Xbox Series X/S. El juego cruzado se agregó al juego en 2020 para permitir jugar con personas en otras plataformas, mientras que la progresión cruzada siguió en 2024 para permitir que los jugadores con cuentas en diferentes plataformas compartieran todo lo que habían desbloqueado en cada cuenta. El juego se ejecutó en Unreal Engine 4 desde 2016 hasta 2024, cuando se actualizó a Unreal Engine 5.
             <br><br>
             Dead by Daylight recibió críticas mixtas tras su lanzamiento, pero fue un éxito comercial; desde entonces ha atraído a más de 60 millones de jugadores y ha mejorado sus calificaciones. En 2023, se anunció que las productoras Blumhouse Productions y Atomic Monster habían comenzado a desarrollar una adaptación cinematográfica.
-            </p>
+            <br><br>
+            Dead by Daylight necesita tu ayuda para crear nuevos asesinos o supervivientes. Si quieres ayudarnos, por favor, rellena el siguiente formulario:
+          </p>
+
+        <form action="#" method="post" class="formulariosugerencias">
+          <fieldset>
+            <legend>Información de contacto</legend>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com"><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Fechas</legend>
+            <label for="suggestion-date">Fecha de sugerencia:</label><br>
+            <input type="date" id="suggestion-date" name="suggestion-date" required><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Características del personaje</legend>
+            <label for="power-level">Nivel de poder (5-100):</label><br>
+            <input type="range" id="power-level" name="power-level" min="5" max="100" value="50"><br>
+            <output for="power-level"></output>
+            
+            <label for="perks-count">Número de habilidades (1-4):</label><br>
+            <input type="number" id="perks-count" name="perks-count" min="1" max="4" required><br>
+            
+            <label for="character-name">Nombre del personaje (solo letras y espacios. El nombre del personaje debe empezar por "el" o "la".):</label><br>
+            <input type="text" id="character-name" name="character-name" 
+                   pattern="^(El|La\s|el|la\s|lo\s|la\s)[A-Za-zÀ-ÿ\s]+$"
+                   title="El nombre debe comenzar por 'el/los' o 'la/las', seguido de solo letras y espacios."
+                   required><br>
+          </fieldset>
+
+          <fieldset class="submit-field">
+            <input type="submit" value="Enviar sugerencia">
+          </fieldset>
+        </form>
+
         <section>
           <h3>Comentarios</h3>
           
@@ -56,9 +90,14 @@
             <p><div class="avatar wraith"></div><div class="usuario">Usuario1:</div> <div class="textocomentario">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div></p></div>
 
         </section>
+
+
+     <!-- Fin del artículo -->
+
+
       </article>
 
-      <!-- Fin del artículo -->
+
 
       <aside>
         <h3>Login</h3>
