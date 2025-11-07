@@ -52,7 +52,7 @@ main {
   padding-top: 80px;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   background-color: #333333;
@@ -62,7 +62,7 @@ ul {
   font-size: 18px;
 }
 
-ul li a {
+nav ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -73,6 +73,14 @@ ul li a {
 
 ul li a:hover {
   background-color: #111111;
+}
+
+/* Listas anidadas */
+
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+  list-style-type: disclosure-closed;
 }
 
 footer {
@@ -276,4 +284,40 @@ fieldset label {
     background-color: #0f0f0f;
     border-radius: 4px;
     border: 3px solid #000000;
+  }
+
+  /* ===== Table ===== */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #1b1b1b;
+    background-color: #2c2c2c;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    table-layout: auto;
+  }
+
+  table thead td, table thead th {
+    background: linear-gradient(180deg,#3b0000,#210000);
+    color: #ffffff;
+    padding: 14px 18px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid rgba(0,0,0,0.35);
+  }
+
+  table tbody tr:hover {
+    background: #333333;
+  }
+
+  td, th {
+    color: #eaeaea;
+    padding: 12px 16px;
+    min-width: 120px;
+    height: auto;
+    vertical-align: middle;
+    border: 1px solid #3a3a3a;
+    background-clip: padding-box;
   }
