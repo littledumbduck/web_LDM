@@ -97,10 +97,10 @@ aside {
   border-radius: 5px;
 }
 
-h1, h2, h3 {
-  color: #ffffff;
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
 }
-
 form {
   color: white;
 }
