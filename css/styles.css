@@ -194,7 +194,7 @@ input[type="submit"]:hover {
   background-color: #680000;
 }
 
-.comentario {
+#comentario {
   background-color: #4d4d4d;
   padding: 10px;
   margin-bottom: 10px;
